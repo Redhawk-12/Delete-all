@@ -22,7 +22,7 @@ from pyrogram.errors import (
 )
 from pyrogram.enums import ChatMemberStatus
 from pyrogram.types import Message
-from bot.bot import Bot
+from Bot.Bot import Bot
 
 
 async def make_chat_user_join(
