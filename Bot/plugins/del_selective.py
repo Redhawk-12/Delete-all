@@ -19,7 +19,7 @@ from pyrogram.types import Message
 from pyrogram.errors import (
     ChatAdminRequired
 )
-from bot import (
+from Bot import (
     AKTIFPERINTAH,
     BEGINNING_SEL_DEL_MESSAGE,
     DEL_FROM_COMMAND,
@@ -32,10 +32,10 @@ from bot import (
     THANK_YOU_MESSAGE,
     TL_FILE_TYPES
 )
-from bot.bot import Bot
-from bot.helpers.custom_filter import allowed_chat_filter
-from bot.helpers.make_user_join_chat import make_chat_user_join
-from bot.helpers.get_messages import get_messages
+from Bot.bot import Bot
+from Bot.helpers.custom_filter import allowed_chat_filter
+from Bot.helpers.make_user_join_chat import make_chat_user_join
+from Bot.helpers.get_messages import get_messages
 
 
 @Bot.on_message(
