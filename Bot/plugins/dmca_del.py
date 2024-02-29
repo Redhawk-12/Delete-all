@@ -23,11 +23,11 @@ from bot import (
     SHTL_BOT_HCAT_QO,
     SHTL_USR_HCAT_QO
 )
-from bot.bot import Bot
-from bot.helpers.gulmnek import knemblook
-from bot.helpers.delete_messages import mass_delete_messages
-from bot.helpers.help_for_14121 import check_perm
-from bot.helpers.make_user_join_chat import make_chat_user_join
+from Bot.Bot import Bot
+from Bot.helpers.gulmnek import knemblook
+from Bot.helpers.delete_messages import mass_delete_messages
+from Bot.helpers.help_for_14121 import check_perm
+from Bot.helpers.make_user_join_chat import make_chat_user_join
 
 
 @Bot.on_message(
