@@ -19,12 +19,12 @@ from pyrogram.types import Message
 from pyrogram.errors import (
     ChatAdminRequired
 )
-from bot import (
+from Bot import (
     AKTIFPERINTAH,
     DEL_FROM_COMMAND
 )
-from bot.bot import Bot
-from bot.helpers.custom_filter import allowed_chat_filter
+from Bot.Bot import Bot
+from Bot.helpers.custom_filter import allowed_chat_filter
 
 
 @Bot.on_message(
