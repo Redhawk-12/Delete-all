@@ -20,7 +20,7 @@ from pyrogram.errors import (
 )
 from pyrogram.raw.functions.channels import DeleteHistory
 from pyrogram.types import Message
-from bot import (
+from Bot import (
     BEGINNING_DEL_ALL_MESSAGE,
     DEL_ALL_COMMAND,
     IN_CORRECT_PERMISSIONS_MESSAGE,
@@ -28,10 +28,10 @@ from bot import (
     SHTL_USR_HCAT_QO,
     THANK_YOU_MESSAGE
 )
-from bot.bot import Bot
-from bot.helpers.custom_filter import allowed_chat_filter
-from bot.helpers.get_messages import get_messages
-from bot.helpers.make_user_join_chat import make_chat_user_join
+from Bot.Bot import Bot
+from Bot.helpers.custom_filter import allowed_chat_filter
+from Bot.helpers.get_messages import get_messages
+from Bot.helpers.make_user_join_chat import make_chat_user_join
 
 
 @Bot.on_message(
