@@ -51,7 +51,7 @@ class Bot(Client):
                 ]
             },
             workers=TG_BOT_WORKERS,
-            bot_token=TG_BOT_TOKEN,
+            Bot_token=TG_BOT_TOKEN,
             sleep_threshold=TG_SLEEP_THRESHOLD,
             parse_mode=ParseMode.HTML
         )
@@ -59,7 +59,7 @@ class Bot(Client):
 
     async def start(self):
         await super().start()
-        usr_bot_me = self.me
+        usr_Bot_me = self.me
         self.BOT_ID = usr_Bot_me.id
         self.LOGGER(__name__).info(
             f"@{usr_Bot_me.username} based on Pyrogram v{__version__} "
@@ -67,7 +67,7 @@ class Bot(Client):
         self.USER, self.USER_ID = await User().start()
         # hack to get the entities in-memory
         await self.USER.send_message(
-            usr_bot_me.username,
+            usr_Bot_me.username,
             "join https://t.me/SpEcHlDe/857"
         )
 
