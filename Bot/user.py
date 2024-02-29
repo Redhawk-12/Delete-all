@@ -51,9 +51,9 @@ class User(Client):
         await super().start()
         usr_bot_me = self.me
         self.LOGGER(__name__).info(
-            f"{usr_bot_me} based on Pyrogram v{__version__} "
+            f"{usr_Bot_me} based on Pyrogram v{__version__} "
         )
-        return (self, usr_bot_me.id)
+        return (self, usr_Bot_me.id)
 
     async def stop(self, *args):
         await super().stop()
