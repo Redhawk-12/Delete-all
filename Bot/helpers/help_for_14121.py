@@ -17,7 +17,7 @@
 from pyrogram.errors import (
     UserNotParticipant
 )
-from bot.bot import Bot
+from Bot.Bot import Bot
 
 
 async def check_perm(client: Bot, chat_id: int, user_id: int) -> bool:
