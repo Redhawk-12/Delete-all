@@ -16,7 +16,7 @@
 
 from pyrogram import filters
 from pyrogram.types import Message
-from bot import (
+from Bot import (
     BEGINNING_DEL_ALL_MESSAGE,
     THANK_YOU_MESSAGE,
     IN_CORRECT_PERMISSIONS_MESSAGE,
@@ -47,7 +47,7 @@ from Bot.helpers.make_user_join_chat import make_chat_user_join
     )
 )
 async def dmca_spec_del_nf(client: Bot, message: Message):
-    bot_id = await client.get_me()
+    Bot_id = await client.get_me()
     status_message = await message.reply_text(
         BEGINNING_DEL_ALL_MESSAGE,
         quote=True
@@ -58,7 +58,7 @@ async def dmca_spec_del_nf(client: Bot, message: Message):
         aqo = check_perm(client, chat_id, message.from_user.id)
         if not aqo:
             continue
-        qbo = check_perm(client, chat_id, bot_id)
+        qbo = check_perm(client, chat_id, Bot_id)
         if not qbo:
             await status_message.reply_text(
                 IN_CORRECT_PERMISSIONS_MESSAGE,
