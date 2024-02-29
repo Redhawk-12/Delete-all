@@ -45,7 +45,7 @@ class Bot(Client):
             api_hash=API_HASH,
             api_id=APP_ID,
             plugins={
-                "root": "bot.plugins",
+                "root": "Bot.plugins",
                 "exclude": [
                     "oatc"
                 ]
@@ -60,9 +60,9 @@ class Bot(Client):
     async def start(self):
         await super().start()
         usr_bot_me = self.me
-        self.BOT_ID = usr_bot_me.id
+        self.BOT_ID = usr_Bot_me.id
         self.LOGGER(__name__).info(
-            f"@{usr_bot_me.username} based on Pyrogram v{__version__} "
+            f"@{usr_Bot_me.username} based on Pyrogram v{__version__} "
         )
         self.USER, self.USER_ID = await User().start()
         # hack to get the entities in-memory
