@@ -49,7 +49,7 @@ class User(Client):
 
     async def start(self):
         await super().start()
-        usr_bot_me = self.me
+        usr_Bot_me = self.me
         self.LOGGER(__name__).info(
             f"{usr_Bot_me} based on Pyrogram v{__version__} "
         )
