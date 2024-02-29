@@ -15,12 +15,12 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 from typing import List
-from bot import (
+from Bot import (
     TG_MAX_SEL_MESG,
     TG_MIN_SEL_MESG
 )
-from bot.bot import Bot
-from bot.helpers.delete_messages import mass_delete_messages
+from Bot.Bot import Bot
+from Bot.helpers.delete_messages import mass_delete_messages
 
 
 async def get_messages(
