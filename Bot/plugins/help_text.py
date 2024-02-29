@@ -16,11 +16,11 @@
 
 from pyrogram import filters
 from pyrogram.types import Message
-from bot import (
+from Bot import (
     START_COMMAND,
     START_MESSAGE
 )
-from bot.bot import Bot
+from Bot.Bot import Bot
 
 
 @Bot.on_message(
