@@ -16,7 +16,7 @@
 
 
 from typing import List
-from bot.bot import Bot
+from Bot.Bot import Bot
 
 
 async def mass_delete_messages(
