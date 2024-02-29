@@ -34,7 +34,7 @@ APP_ID = int(get_config("APP_ID", should_prompt=True))
 TG_BOT_TOKEN = get_config("TG_BOT_TOKEN", should_prompt=True)
 # string session for running as user
 TG_USER_SESSION = get_config("TG_USER_SESSION", should_prompt=True)
-TG_BOT_SESSION = get_config("TG_BOT_SESSION", "bot")
+TG_BOT_SESSION = get_config("TG_BOT_SESSION", "Bot")
 # Number of update workers to use.
 # 4 is the recommended (and default) amount,
 # but your experience may vary.
@@ -81,9 +81,9 @@ def LOGGER(name: str) -> logging.Logger:
 
 REQD_PERMISSIONS = "https://t.me/SpEcHlDe/857"
 GIT_REPO_LINK = "https://github.com/SpEcHiDe/DeleteMessagesRoBot"
-""" strings to be used in the bot """
+""" strings to be used in the Bot """
 START_MESSAGE = get_config("START_MESSAGE", (
-    "I'm a bot that can delete <s>all</s> "
+    "I'm a Bot that can delete <s>all</s> "
     "your channel or supergroup messages. "
     "\n\n"
     f"To use me: read 👉 {REQD_PERMISSIONS} 👈"
