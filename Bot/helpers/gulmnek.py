@@ -16,7 +16,7 @@
 
 from pyrogram.types import Message
 from pyrogram.enums import MessageEntityType
-from .delall_bot_links import extract_c_m_ids
+from .delall_Bot_links import extract_c_m_ids
 
 
 def knemblook(
